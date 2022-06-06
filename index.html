@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet">
+    <script defer src="./js/script.js"></script>
+    <title>The anatomy of the dog</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation-list">
+                <img id="logo" src="./img/Potential-Logo.jfif" alt="Picture of dog paw">
+                <li class="navigation-item"><a href="sign-up.html" class="nav-link">Sign Up</a></li>
+                <li class="navigation-item"><a href="animals.html" class="nav-link">Animals</a></li>
+                <li class="navigation-item"><a href="index.html" class="nav-link">Home</a></li>
+            </ul>
+        </nav>
+        <h1>The Anatomy of the Dog</h1>
+    </header>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
+    </div>
+    <main>
+        <div class="container">
+            <button class="Head" onclick="togglePopupHead()">Head</button>
+            <button class="Paw" onclick="togglePopupPaw()">Paw</button>
+            <picture>
+                <source media="(max-width:450px)"
+                    srcset="https://media.istockphoto.com/photos/border-collie-looking-the-camera-isolated-on-white-picture-id514515120?k=6&m=514515120&s=170667a&w=0&h=x7SvonghDCDQ0v9c6p9-RN1wQYbYHZJ7Z5nQhIi_Dns="
+                    width:100px>
+                <img src="./img/The-Golden-Retriever.jpg"
+                    alt="Picture of the dog showing a side view of Golden Retriever">
+            </picture>
+            <button class="Back" onclick="togglePopupBack()">Back</button>
+            <button class="Tail" onclick="togglePopupTail()">Tail</button>
+            <button class="Belly" onclick="togglePopupBelly()">Belly</button>
+        </div>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopupHead()">&times;</div>
+                <h1>Head</h1>
+                <p>Scratch my head and I will love you!</p>
+            </div>
+        </div>
+        <div class="popup" id="popup-2">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopupPaw()">&times;</div>
+                <h1>Paw</h1>
+                <p>Shake my paws and be my friend!</p>
+            </div>
+        </div>
+        <div class="popup" id="popup-3">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopupBack()">&times;</div>
+                <h1>Back</h1>
+                <p>Pat my back to show that you love me</p>
+            </div>
+        </div>
+        <div class="popup" id="popup-4">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopupTail()">&times;</div>
+                <h1>Tail</h1>
+                <p>I wag my tail when I am happy :)</p>
+            </div>
+        </div>
+        <div class="popup" id="popup-5">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopupBelly()">&times;</div>
+                <h1>Belly</h1>
+                <p>I love getting my belly rubbed!</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="media-logo-box">
+            <a href="https://www.facebook.com/"><img class="media-logo" src="./img/facebook-logo-facebook-logo-9.png"
+                    alt="Facebook logo"></a>
+            <a href="https://www.instagram.com/?hl=en"><img class="media-logo"
+                    src="./img/instagram-Logo-PNG-Transparent-Background-download.png" alt="Instagram logo"></a>
+            <a href="https://twitter.com/"><img class="media-logo" src="./img/twitter-nothing.png  "
+                    alt="Twiter logo"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

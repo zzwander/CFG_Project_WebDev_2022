@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/main.css" rel="stylesheet">
+    <script defer src="../js/script.js"></script>
+    <title>Cat page</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation-list">
+                <img id="logo" src="../img/Potential-Logo.jfif" alt="Picture of dog paw">
+                <li class="navigation-item"><a href="../sign-up.html" class="nav-link">Sign Up</a></li>
+                <li class="navigation-item"><a href="../animals.html" class="nav-link">Animals</a></li>
+                <li class="navigation-item"><a href="../index.html" class="nav-link">Home</a></li>
+            </ul>
+        </nav>
+        <h1>Anatomy of a cat</h1>
+    </header>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
+    </div>
+    <main>
+        <div class="container">
+            <button class="Ears-cat" onclick="togglePopupCatEars()">Ears</button>
+            <button class="Eyes-cat" onclick="togglePopupCatEyes()">Eyes</button>
+            <button class="Fur-cat" onclick="togglePopupCatFur()">Fur</button>
+            <button class="Tail-cat" onclick="togglePopupCatTail()">Tail</button>
+            <button class="Paw-cat" onclick="togglePopupCatPaw()">Paw</button>
+            <picture>
+                <source media="(max-width:500px)"
+                    srcset="https://img.myloview.com/posters/young-bengal-cat-staring-isolated-on-white-400-198276204.jpg"
+                    width:40>
+                <img src="https://media.istockphoto.com/photos/side-view-of-a-ginger-mixedbreed-cat-standing-isolated-on-white-picture-id889602750?k=20&m=889602750&s=612x612&w=0&h=Psrub5CPGr50KTWBSvQz9C-8nElq0iDwyq0BHmszhLU="
+                    class="cat-main-picture" alt="Picture of tabby cat looking at camera">
+            </picture>
+
+        </div>
+        <div class="popup" id="popup-6">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopupCatEars()">&times;</div>
+                <h1>Ears</h1>
+                <p>I have excellent hearing.</p>
+            </div>
+        </div>
+        <div class="popup" id="popup-7">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopupCatEyes()">&times;</div>
+                <h1>Eyes</h1>
+                <p>I can see 6-8 times better in the dark than humans!</p>
+            </div>
+        </div>
+        <div class="popup" id="popup-8">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopupCatFur()">&times;</div>
+                <h1>Fur</h1>
+                <p>Stroke my fur and I will purr!</p>
+            </div>
+        </div>
+        <div class="popup" id="popup-9">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopupCatTail()">&times;</div>
+                <h1>Tail</h1>
+                <p>Helps me keep my balance!</p>
+            </div>
+        </div>
+        <div class="popup" id="popup-10">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopupCatPaw()">&times;</div>
+                <h1>Paw</h1>
+                <p>Is sensitive, please don't touch!</p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="media-logo-box">
+            <a href="https://www.facebook.com/"><img class="media-logo" src="../img/facebook-logo-facebook-logo-9.png"
+                    alt="Facebook logo"></a>
+            <a href="https://www.instagram.com/?hl=en"><img class="media-logo"
+                    src="../img/instagram-Logo-PNG-Transparent-Background-download.png" alt="Instagram logo"></a>
+            <a href="https://twitter.com/"><img class="media-logo" src="../img/twitter-nothing.png  "
+                    alt="Twiter logo"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

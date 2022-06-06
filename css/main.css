@@ -1,0 +1,311 @@
+.navigation-list{
+    list-style-type: none;
+}
+.navigation-item{
+    float:right;
+    font-size: 30px;
+    padding:20px;
+    font-weight: bold;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+
+}
+#logo{
+    width:120px;
+}
+.navbar{
+    background-color:#ccc;
+    outline:2px solid black;
+    overflow:auto;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+}
+.rabbit-main-picture{
+    width:500px;
+
+}
+footer{
+    background-color:#ccc;
+    outline:2px solid black;
+    height:120px;
+    overflow:auto;
+}
+.media-logo-box{
+    display:flex;
+    justify-content: center;
+    padding: auto;
+}
+.media-logo{
+    width: 50px;
+    padding:30px;
+}
+@media only screen and (max-width:500px) {
+    .navigation-item{
+        display:flex;
+        font-size:15px;
+        padding:5px;
+}   #logo{
+    width:50px;
+    }
+   main{
+       padding:5px;
+   }
+   footer{
+       height:100px;
+   }
+   .Head{
+    top:20px;
+    }
+   .Paw{
+    bottom: -450px; 
+   }
+   .Tail{
+       position:relative;
+    left:250px;
+    top:-100px;
+    }
+    .Belly{
+        position: relative;
+        left:70px;
+    }
+    .Back{
+        position: relative;
+        left:250px;
+        top:-200px;
+    }
+    .Ears-rabbit{
+        top:20px;
+    }
+    .Snout-rabbit{
+        top:180px;
+        right:-200px;
+    }
+    .Back-rabbit{
+        top:-250px;
+        left:150px;
+    }
+    .Paw-rabbit{
+        left:310px;
+        top:-50px;
+    }
+    .Ears-cat{
+        position: relative;
+        left:225px;
+        top:40px;
+    }
+    .Eyes-cat{
+        position: relative; 
+        top:130px;
+        left: 60px; 
+    }
+    .Fur-cat{
+        position: relative; 
+        top: 250px;
+        left: 150px;
+    }
+    .Tail-cat{
+        position: relative; 
+        top: 330px;
+        left: -70px;
+    }
+    .Paw-cat{
+        position: relative; 
+        top:400px;
+        left:30px;
+    }
+    .guinea-pig-construction {
+        width: 350px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+}
+.Head{
+    position: relative;
+    bottom:450px;
+    left: 120px;
+}
+.Ears-rabbit{
+    position: relative;
+    bottom: 450px;
+    left: 220px;
+}
+
+.Ears-cat {
+    position: relative; 
+    bottom: 435px; 
+    right: -640px; 
+}
+
+.Paw{
+    position: relative;
+    left: 20%;
+    top:100%; 
+   
+}
+
+.Snout-rabbit{
+    position: relative;
+    bottom: 160px;
+   
+}
+
+.Eyes-cat {
+    position: relative; 
+    bottom: 380px; 
+    right: -680px; 
+}
+
+.Tail{
+    position: relative;
+    bottom: 200px;
+    right: 100px;
+}
+
+.Paw-rabbit{
+    position: relative;
+    bottom: 20px;
+    right: 550px;
+}
+
+.Fur-cat {
+    position: relative; 
+    bottom: 300px; 
+    right: -200px; 
+}
+
+.Belly{
+    position: relative;
+    bottom: 140px;
+    right: 420px;
+}
+.Back{
+    position: relative;
+    bottom: 380px;
+    right: 360px;
+}
+
+.Tail-cat {
+    position: relative; 
+    bottom: 150px; 
+    right: -90px; 
+}
+
+.Back-rabbit{
+    position: relative;
+    bottom: 300px;
+    right:200px;
+}
+
+.Paw-cat {
+    position: relative; 
+    bottom: 20px; 
+    right: -550px
+}
+
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    z-index: 1;
+    background:rgba(0,0,0,0.7);
+    display: none;
+}
+.popup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%) scale(0);
+    width:350px;
+    height:220px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    background:#fff
+}
+.popup .close-btn {
+    cursor: pointer;
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.popup.active .overlay {
+    display: block;
+}
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+.gallery{
+    border: 1px solid #ccc;
+    width: 350px;
+}
+
+.gallery:hover {
+    border: 1px solid red;
+}
+
+.gallery-image{
+    width: 350px;
+}
+
+.card{
+    padding: 6px;
+}
+.description{
+    text-align: center;
+}
+.animals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#submitButton{
+    color: white;
+    background-color: darkslategrey;
+    border: none; 
+    padding: 15px 32px; 
+    font-size: 20px;
+    width: 100%; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#submitButton:hover{
+    background-color: lightslategray;
+}
+
+form{
+    justify-content: center;
+}
+
+.formLabel{
+    font-size: 20px;
+    padding-top: 50px; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+input{
+    width: 100%; 
+    padding: 12px; 
+}
+
